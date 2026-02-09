@@ -23,7 +23,7 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
                     <?php if (isset($_SESSION['student_id'])): ?>
                     <a href="/courses" class="text-emerald-300 hover:text-emerald-200 transition text-xs sm:text-sm lg:text-base <?= $currentPath == '/courses' ? 'underline underline-offset-4' : '' ?>"><i class="fas fa-book mr-1"></i><span class="hidden lg:inline">วิชาเรียน</span><span class="lg:hidden">วิชา</span></a>
                     <a href="/enrolled" class="text-emerald-300 hover:text-emerald-200 transition text-xs sm:text-sm lg:text-base <?= $currentPath == '/enrolled' ? 'underline underline-offset-4' : '' ?>"><i class="fas fa-list mr-1"></i><span class="hidden lg:inline">ลงทะเบียนแล้ว</span><span class="lg:hidden">ลงแล้ว</span></a>
-                    <a href="/logout" class="text-emerald-300 hover:text-emerald-200 transition text-xs sm:text-sm lg:text-base"><i class="fas fa-sign-out-alt mr-1"></i><span class="hidden lg:inline">ออกจากระบบ</span><span class="lg:hidden">ออก</span></a>
+                    <a href="#" onclick="showConfirmModal('ต้องการออกจากระบบหรือไม่?', () => window.location.href = '/logout'); return false;" class="text-emerald-300 hover:text-emerald-200 transition text-xs sm:text-sm lg:text-base"><i class="fas fa-sign-out-alt mr-1"></i><span class="hidden lg:inline">ออกจากระบบ</span><span class="lg:hidden">ออก</span></a>
                     <?php endif; ?>
                 </nav>
             </div>
@@ -32,7 +32,7 @@ $currentPath = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
                 <?php if (isset($_SESSION['student_id'])): ?>
                 <a href="/courses" class="block py-2 sm:py-3 px-3 sm:px-4 rounded hover:bg-emerald-700 transition text-sm <?= $currentPath == '/courses' ? 'underline underline-offset-4' : '' ?>"><i class="fas fa-book mr-2"></i>วิชาเรียน</a>
                 <a href="/enrolled" class="block py-2 sm:py-3 px-3 sm:px-4 rounded hover:bg-emerald-700 transition text-sm <?= $currentPath == '/enrolled' ? 'underline underline-offset-4' : '' ?>"><i class="fas fa-list mr-2"></i>ลงทะเบียนแล้ว</a>
-                <a href="/logout" class="block py-2 sm:py-3 px-3 sm:px-4 rounded hover:bg-emerald-700 transition text-sm"><i class="fas fa-sign-out-alt mr-2"></i>ออกจากระบบ</a>
+                <a href="#" onclick="showConfirmModal('ต้องการออกจากระบบหรือไม่?', () => window.location.href = '/logout'); return false;" class="block py-2 sm:py-3 px-3 sm:px-4 rounded hover:bg-emerald-700 transition text-sm"><i class="fas fa-sign-out-alt mr-2"></i>ออกจากระบบ</a>
                 <?php endif; ?>
             </nav>
         </div>

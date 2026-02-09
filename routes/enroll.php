@@ -13,9 +13,9 @@ if ($courseId <= 0) {
 }
 
 if (enrollCourse($studentId, $courseId)) {
-    header('Location: /?message=' . urlencode('ลงทะเบียนวิชาสำเร็จ'));
+    header('Location: /courses?message=' . urlencode('ลงทะเบียนวิชาสำเร็จ'));
 } else {
-    header('Location: /?message=' . urlencode('ไม่สามารถลงทะเบียนวิชานี้ได้ (อาจลงทะเบียนแล้ว)'));
+    header('Location: /courses?message=' . urlencode('ไม่สามารถลงทะเบียนวิชานี้ได้ (อาจลงทะเบียนแล้ว)'));
 }
 exit;
 ?>
