@@ -46,19 +46,19 @@
             </div>
             <div class="p-4 space-y-2">
                 <button onclick="fillLogin('alice@example.com', 'password')" class="w-full bg-white border-4 border-black p-3 font-bold text-left btn-brutal">
-                    <i class="fas fa-user mr-2"></i>alice@example.com
+                    <i class="fas fa-user mr-2"></i>alice@example.com | password
                 </button>
                 <button onclick="fillLogin('bob@example.com', 'password')" class="w-full bg-white border-4 border-black p-3 font-bold text-left btn-brutal">
-                    <i class="fas fa-user mr-2"></i>bob@example.com
+                    <i class="fas fa-user mr-2"></i>bob@example.com | password
                 </button>
                 <button onclick="fillLogin('charlie@example.com', 'password')" class="w-full bg-white border-4 border-black p-3 font-bold text-left btn-brutal">
-                    <i class="fas fa-user mr-2"></i>charlie@example.com
+                    <i class="fas fa-user mr-2"></i>charlie@example.com | password
                 </button>
                 <button onclick="fillLogin('david@example.com', 'password')" class="w-full bg-white border-4 border-black p-3 font-bold text-left btn-brutal">
-                    <i class="fas fa-user mr-2"></i>david@example.com
+                    <i class="fas fa-user mr-2"></i>david@example.com | password
                 </button>
                 <button onclick="fillLogin('emily@example.com', 'password')" class="w-full bg-white border-4 border-black p-3 font-bold text-left btn-brutal">
-                    <i class="fas fa-user mr-2"></i>emily@example.com
+                    <i class="fas fa-user mr-2"></i>emily@example.com | password
                 </button>
             </div>
         </div>
