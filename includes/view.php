@@ -2,7 +2,7 @@
 
 function renderView(string $template, array $data = []): void
 {
-    $data = $data; // Make data available in templates
+    $data = $data; 
     $templatePath = TEMPLATES_DIR . '/' . $template . '.php';
 
     if (file_exists($templatePath)) {

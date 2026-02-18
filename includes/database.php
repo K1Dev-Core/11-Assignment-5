@@ -1,6 +1,6 @@
 <?php
 
-$hostname = 'db';
+$hostname = 'mysql';
 $dbName = 'course_registration';
 $username = 'reg_user';
 $password = 'reg_pass';
@@ -15,7 +15,7 @@ function getConnection(): mysqli
     return $conn;
 }
 
-// Load database functions
+
 require_once DATABASES_DIR . '/students.php';
 require_once DATABASES_DIR . '/courses.php';
 require_once DATABASES_DIR . '/enrollment.php';

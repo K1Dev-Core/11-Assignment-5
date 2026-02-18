@@ -24,7 +24,7 @@ function isEnrolled(int $studentId, int $courseId): bool
 function enrollCourse(int $studentId, int $courseId): bool
 {
     if (isEnrolled($studentId, $courseId)) {
-        return false; // Already enrolled
+        return false; 
     }
     $conn = getConnection();
     $sql = 'INSERT INTO enrollment (student_id, course_id, enrollment_date) VALUES (?, ?, CURDATE())';
