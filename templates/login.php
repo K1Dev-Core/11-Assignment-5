@@ -74,7 +74,7 @@
             document.getElementById('email').value = email;
             document.getElementById('password').value = password;
             document.getElementById('debugModal').classList.add('hidden');
-            document.getElementById('loginForm').submit();
+
         }
         
         document.getElementById('debugModal').addEventListener('click', function(e) {
